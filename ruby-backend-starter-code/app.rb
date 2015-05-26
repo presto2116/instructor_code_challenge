@@ -1,6 +1,8 @@
-require 'active_record'
-require 'sinatra'
-require 'json'
+gem 'sinatra'
+gem 'activerecord'
+gem 'pg'
+gem 'pry'
+gem 'json'
 require_relative 'models/favorite'
 require_relative 'db/connection'
 
