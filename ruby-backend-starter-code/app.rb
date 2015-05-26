@@ -1,6 +1,6 @@
-require 'active_record'
+
 require 'sinatra'
-require 'json'
+
 
 
   get '/' do
