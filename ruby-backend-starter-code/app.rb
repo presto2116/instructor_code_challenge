@@ -1,8 +1,11 @@
 require 'active_record'
 require 'sinatra'
 require 'json'
+require_relative 'models/favorite'
+require_relative 'db/connection'
 
 
+class App < Sinatra::Base
   get '/' do
     File.read('index.html')
     erb :search
