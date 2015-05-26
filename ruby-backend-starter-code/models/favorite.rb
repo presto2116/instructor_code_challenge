@@ -1,3 +1,3 @@
 class Favorite < ActiveRecord::Base
-	validates :title, :presence => true 
+	validates :title, :year, :rated, :genre, :plot, :presence => true 
 end
