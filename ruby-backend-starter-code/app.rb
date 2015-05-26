@@ -1,13 +1,8 @@
-gem 'sinatra'
-gem 'activerecord'
-gem 'pg'
-gem 'pry'
-gem 'json'
-require_relative 'models/favorite'
-require_relative 'db/connection'
+require 'active_record'
+require 'sinatra'
+require 'json'
 
 
-class App < Sinatra::Base
   get '/' do
     File.read('index.html')
     erb :search
